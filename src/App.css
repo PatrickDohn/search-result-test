@@ -2,9 +2,21 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

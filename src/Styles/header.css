@@ -1,0 +1,21 @@
+.container {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container input {
+    font-size: 18px;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+
+}
+
+.tags {
+    border: 1px solid black;
+    width: 5%;
+    padding: 10px;
+    margin: 5px;
+}
