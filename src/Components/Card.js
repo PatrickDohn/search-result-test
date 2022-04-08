@@ -6,8 +6,10 @@ const Card = (info) => {
   const { _highlightResult, Sku } = info.info
   const { Upc, Name } = _highlightResult
 
+  
 
-  console.log()
+
+  console.log(info.info)
 
 
     return (

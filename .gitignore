@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# ignore dev API key
+.env
+
 # testing
 /coverage
 

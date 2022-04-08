@@ -1,8 +1,62 @@
-# Getting Started with Create React App
+<div id="top"></div>
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+
+<h1 align="center">Search Page</h1>
+
+  <p align="center">
+    Search Page Test
+ 
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+     <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+TODO: fill in
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Built With
+
+- [React.js](https://reactjs.org/)
+- [Algolia](https://www.algolia.com/doc/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
@@ -14,57 +68,60 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Get a free API Key and Application ID at [Algolia](https://www.algolia.com/doc/)
+2. Clone the repo
+   ```sh
+   git clone git@github.com:PatrickDohn/search-result-test.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- USAGE EXAMPLES -->
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+TODO: fill in...
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- ROADMAP -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Roadmap
 
-## Learn More
+- [x] Set up API request
+- [x] Build out Card components to display data
+- [x] Build out search component to to filter results based on search param
+  - [ ] Add scoring system for more accurate search
+- [ ] Add tags of differnt categories for simple filtering
+- [ ] Add styling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- CONTACT -->
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Patrick Dohn - [LinkedIn](https://www.linkedin.com/in/patrick-dohn/) - dohnpatrick1993@gmail.com
 
-### Analyzing the Bundle Size
+Project Link: [https://github.com/PatrickDohn/search-result-test](https://github.com/PatrickDohn/search-result-test)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/patrick-dohn/
