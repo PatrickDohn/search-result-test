@@ -31,7 +31,9 @@ export default function NutritionModal({ nutritionFacts }) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Nutrition Facts</Button>
+      <Button size="small" variant="contained" onClick={handleOpen}>
+        Nutrition Facts
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}

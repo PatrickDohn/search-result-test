@@ -41,23 +41,25 @@ const Header = ({
                 fetchData(1);
                 setCurrentPage(1);
               }}
-              variant="outlined"
+              variant="contained"
               size="medium"
             >
               Clear Search
             </Button>
           </div>
         </Box>
-        {searchValue ? (
-          <Stack direction="row" spacing={1}>
-            <Chip label={searchValue} />
-          </Stack>
-        ) : (
-          ''
-        )}
+        <div className="tags">
+          {searchValue ? (
+            <Stack direction="row" spacing={1}>
+              <Chip color="primary" label={searchValue} />
+            </Stack>
+          ) : (
+            ''
+          )}
+        </div>
       </div>
       <div className="bottom-row">
-        <Stack spacing={4}>
+        <Stack spacing={2}>
           <Pagination
             siblingCount={3}
             boundaryCount={2}

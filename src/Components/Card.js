@@ -11,10 +11,25 @@ const InfoCard = (info) => {
   const { _highlightResult, Sku } = info.info;
   const { Upc, Name } = _highlightResult;
 
+  console.log(_highlightResult);
+
   const nutritionFacts = _.get(info, 'info.nutrition[0]');
 
   return (
-    <Card sx={{ width: 200, height: 250, margin: 2 }}>
+    <Card
+      raised="true"
+      variant="outlined"
+      sx={{
+        transition: '0.3s',
+        boxShadow: '0 8px 40px -12px rgba(255,255,255, 0.7)',
+        '&:hover': {
+          boxShadow: '0 16px 70px -12.125px rgba(255,255,255, 0.7)',
+        },
+        width: 200,
+        height: 250,
+        margin: 2,
+      }}
+    >
       <CardContent>
         <Typography
           dangerouslySetInnerHTML={{ __html: Name.value }}

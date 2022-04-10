@@ -2,9 +2,13 @@
   height: 15vh;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  border-bottom: 2px solid lightslategray;
   position: sticky;
+
   top: 0;
+  z-index: 1;
+
+  background-color: #fff;
 }
 
 .top-row {
@@ -24,14 +28,23 @@
   height: 20px;
   padding: 10px;
   margin: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid lightslategray;
 }
 
-.tags {
+/* .tags {
   border: 1px solid black;
-  width: 5%;
-  height: 10px;
-  border-radius: 3px;
-  padding: 10px;
-  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.css-w4z10b-MuiStack-root {
+  margin-top: 4px;
+  padding: 6px 16px;
+  position: relative;
+  font-weight: 500;
+  font-size: 0.875rem;
+  min-width: 64px;
 }
