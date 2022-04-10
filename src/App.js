@@ -1,22 +1,23 @@
-import './App.css';
+import '../src/Styles/App.css';
 import _ from 'lodash';
 import React, { useState, useEffect } from 'react';
 import Header from './Components/Header';
-import Card from './Components/Card';
-import Pagination from 'react-js-pagination';
+import InfoCard from './Components/Card';
+// import { calculateScore } from './helpers';
+import url from './constants';
 
 function App() {
-  const [pageResults, setPageResults] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [pageResults, setPageResults] = useState({ hits: [] });
   const [searchValue, setSearchValue] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
 
   const buildUrl = (pageNumber) => {
-    let url = `https://i1cqoys68c-dsn.algolia.net/1/indexes/stg_choicemarket_products?x-algolia-application-id=I1CQOYS68C&x-algolia-api-key=eac7b807c0109771a245855c7501fca3&page=${pageNumber}&query=${searchValue}&hitsPerPage=20`;
+    let requestUrl = url + `&page=${pageNumber}&query=${searchValue}&hitsPerPage=20`;
 
     if (!searchValue) {
-      url = `https://i1cqoys68c-dsn.algolia.net/1/indexes/stg_choicemarket_products?x-algolia-application-id=I1CQOYS68C&x-algolia-api-key=eac7b807c0109771a245855c7501fca3&hitsPerPage=20&page=${pageNumber}`;
+      requestUrl = url + `&hitsPerPage=20&page=${pageNumber}`;
     }
-    return url;
+    return requestUrl;
   };
 
   const fetchData = async (pageNumber) => {
@@ -26,35 +27,26 @@ function App() {
     setPageResults(data);
   };
 
-  const handlePageChange = (pageNumber) => {
-    fetchData(pageNumber);
-    setCurrentPage({ activePage: pageNumber });
-  };
-
   useEffect(() => {
     fetchData(1);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchValue]);
 
-  const pageHits = pageResults.hits;
-
   return (
     <div className="App">
-      <Header setSearchValue={setSearchValue} searchValue={searchValue} />
-
+      <Header
+        currentPage={currentPage}
+        fetchData={fetchData}
+        pageResults={pageResults}
+        setSearchValue={setSearchValue}
+        searchValue={searchValue}
+        setCurrentPage={setCurrentPage}
+      />
       <div className="grid">
-        {_.map(pageHits, (hits, i) => {
-          return <Card key={i++} info={hits} />;
+        {_.map(pageResults.hits, (hits, i) => {
+          return <InfoCard key={i++} info={hits} />;
         })}
       </div>
-
-      <Pagination
-        activePage={pageResults.page}
-        itemsCountPerPage={20}
-        totalItemsCount={500}
-        pageRangeDisplayed={5}
-        onChange={handlePageChange}
-      />
     </div>
   );
 }
