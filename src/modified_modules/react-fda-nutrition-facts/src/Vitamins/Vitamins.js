@@ -9,23 +9,23 @@ export const styles = {
     fontStyle: 14,
     borderCollapse: 'collapse',
     '& tr': {
-      borderBottom: '1px solid black'
+      borderBottom: '1px solid black',
     },
     '& tr > td': {
       textAlign: 'center',
       '&:first-of-type': {
-        textAlign: 'left'
+        textAlign: 'left',
       },
       '&:last-of-type': {
-        textAlign: 'right'
-      }
-    }
+        textAlign: 'right',
+      },
+    },
   },
   footNotes: {
     fontSize: 11,
     textAlign: 'left',
-    marginTop: 3
-  }
+    marginTop: 3,
+  },
 };
 
 class Vitamins extends React.Component {
@@ -54,19 +54,17 @@ class Vitamins extends React.Component {
         </div>
       </div>
     );
-
-    return <div className={classes.root} />;
   }
 }
 
 Vitamins.defaultProps = {
-  collection: []
+  collection: [],
 };
 
 Vitamins.propTypes = {
   collection: PropTypes.array,
   seperator: PropTypes.string,
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default injectSheet(styles)(Vitamins);
