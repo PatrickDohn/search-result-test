@@ -134,7 +134,7 @@ To add variables to Netlify do the following.
 
 Patrick Dohn - [LinkedIn](https://www.linkedin.com/in/patrick-dohn/) - dohnpatrick1993@gmail.com
 
-Project Link: [Search Page](https://phenomenal-cucurucho-493fb4.netlify.app/)
+Project Link: [Search Page](https://product-search-results.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
