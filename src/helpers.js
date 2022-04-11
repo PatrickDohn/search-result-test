@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 /**
  *
  * @param {Object} obj -  The data from the API call
@@ -28,6 +30,18 @@ const calculateScore = (obj, str) => {
   return result;
 };
 
-const helpers = { calculateScore };
+/**
+ * Takes object of nutrition facts and return the amount of that nutrient if the object is not undefined
+ * @param {Object} obj -  The nutrition facts
+ * @returns Number
+ */
+const getNutritionField = (obj) => {
+  if (obj === undefined) {
+    return 0;
+  }
+  return Number(obj.amount);
+};
+
+const helpers = { calculateScore, getNutritionField };
 
 export default helpers;

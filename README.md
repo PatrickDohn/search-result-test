@@ -32,7 +32,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#deployment">Deployment</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
      <li><a href="#contact">Contact</a></li>
   </ol>
@@ -42,7 +42,7 @@
 
 ## About The Project
 
-TODO: fill in
+A simple search result page for displaying and searching for product information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -87,14 +87,31 @@ You may also see any lint errors in the console.
    ```sh
    npm install
    ```
+4. Set up .ENV file. ENV should have the following format
+
+   ```
+   REACT_APP_YOUR_API_KEY=youapikey
+   REACT_APP_YOUR_CLIENT_ID=yourclientid
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
+<!-- DEPLOYMENT -->
 
-## Usage
+## Deployment
 
-TODO: fill in...
+This project is hosted on [Netlify](https://www.netlify.com/)
+
+To set up your own project head to Netlify and sign up for free.
+
+Follow there deployment docs and make sure and ENV variable you have you add to your netlify project.
+
+In Netlify do the following.
+
+1. Go to your site
+2. In the the side bar click `Build & Deploy`
+3. click `Enviroment`
+4. Go to `Enviroment Variables` and add your variables as they appear in your ENV.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -105,9 +122,9 @@ TODO: fill in...
 - [x] Set up API request
 - [x] Build out Card components to display data
 - [x] Build out search component to to filter results based on search param
-  - [ ] Add scoring system for more accurate search
-- [ ] Add tags of differnt categories for simple filtering
 - [x] Add styling
+- [ ] Add scoring system for more accurate search
+- [ ] Add tags of differnt categories for simple filtering
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -117,7 +134,7 @@ TODO: fill in...
 
 Patrick Dohn - [LinkedIn](https://www.linkedin.com/in/patrick-dohn/) - dohnpatrick1993@gmail.com
 
-Project Link: [https://github.com/PatrickDohn/search-result-test](https://github.com/PatrickDohn/search-result-test)
+Project Link: [Search Page](https://phenomenal-cucurucho-493fb4.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

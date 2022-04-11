@@ -14,7 +14,6 @@ const InfoCard = (info) => {
 
   return (
     <Card
-      raised="true"
       variant="outlined"
       sx={{
         border: ' 3px solid #1976d2',

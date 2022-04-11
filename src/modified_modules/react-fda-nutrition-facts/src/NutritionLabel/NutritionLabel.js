@@ -11,14 +11,14 @@ export const styles = {
     backgroundColor: 'white',
     border: '1px solid black',
     boxShadow: '4px 4px 8px 0px rgba(0,0,0,0.25)',
-    fontFamily: 'Libre Franklin, sans-serif'
+    fontFamily: 'Libre Franklin, sans-serif',
   },
   attribute: {
-    fontWeight: 800
+    fontWeight: 800,
   },
   italic: {
-    fontStyle: 'italic'
-  }
+    fontStyle: 'italic',
+  },
 };
 
 class NutritionLabel extends React.Component {
@@ -40,7 +40,7 @@ class NutritionLabel extends React.Component {
       vitaminA,
       vitaminC,
       calcium,
-      iron
+      iron,
     } = this.props;
 
     return (
@@ -77,7 +77,7 @@ class NutritionLabel extends React.Component {
         <Vitamins
           collection={[
             [`Vitamin A ${vitaminA}%`, `Vitamin C ${vitaminC}%`],
-            [`Calcium ${calcium}%`, `Iron ${iron}%`]
+            [`Calcium ${calcium}%`, `Iron ${iron}%`],
           ]}
         />
       </div>
@@ -85,23 +85,24 @@ class NutritionLabel extends React.Component {
   }
 }
 
+// Todo: fix prop types
 NutritionLabel.propTypes = {
   servingSize: PropTypes.string,
   servingsPerContainer: PropTypes.number,
-  calories: PropTypes.number,
-  totalFat: PropTypes.number,
-  saturatedFat: PropTypes.number,
-  transFat: PropTypes.number,
-  cholesterol: PropTypes.number,
-  sodium: PropTypes.number,
-  totalCarbs: PropTypes.number,
-  dietaryFiber: PropTypes.number,
-  sugars: PropTypes.number,
-  protein: PropTypes.number,
-  vitaminA: PropTypes.number,
-  vitaminC: PropTypes.number,
-  calcium: PropTypes.number,
-  iron: PropTypes.number
+  calories: PropTypes.any,
+  totalFat: PropTypes.any,
+  saturatedFat: PropTypes.any,
+  transFat: PropTypes.any,
+  cholesterol: PropTypes.any,
+  sodium: PropTypes.any,
+  totalCarbs: PropTypes.any,
+  dietaryFiber: PropTypes.any,
+  sugars: PropTypes.any,
+  protein: PropTypes.any,
+  vitaminA: PropTypes.any,
+  vitaminC: PropTypes.any,
+  calcium: PropTypes.any,
+  iron: PropTypes.any,
 };
 
 export default injectSheet(styles)(NutritionLabel);

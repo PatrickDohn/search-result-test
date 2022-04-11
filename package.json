@@ -14,7 +14,6 @@
     "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-fda-nutrition-facts": "^0.1.0",
     "react-instantsearch-hooks": "^6.23.3",
     "react-js-pagination": "^3.0.3",
     "react-jss": "^8.2.1",

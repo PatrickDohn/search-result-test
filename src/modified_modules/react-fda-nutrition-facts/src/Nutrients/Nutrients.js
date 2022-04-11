@@ -5,28 +5,28 @@ import injectSheet from 'react-jss';
 export const styles = {
   root: {
     textAlign: 'left',
-    marginTop: 6
+    marginTop: 6,
   },
   headline: {
-    fontSize: props => props.headlineSize,
+    fontSize: (props) => props.headlineSize,
     fontWeight: 800,
-    borderBottom: '1px solid black'
+    borderBottom: '1px solid black',
   },
   calorieSummary: {
     display: 'flex',
     flexFlow: 'row nowrap',
     justifyContent: 'space-between',
     borderBottom: '3px solid black',
-    fontSize: props => props.calorieSummarySize,
+    fontSize: (props) => props.calorieSummarySize,
     whiteSpace: 'nowrap',
     '& > span:first-of-type': {
-      marginRight: 8
-    }
+      marginRight: 8,
+    },
   },
   periodIndication: {
     fontSize: 11,
     textAlign: 'right',
-    marginTop: 3
+    marginTop: 3,
   },
   nutrients: {
     marginTop: 6,
@@ -36,16 +36,16 @@ export const styles = {
       margin: 0,
       padding: 0,
       '& ul': {
-        paddingLeft: 8
-      }
+        paddingLeft: 8,
+      },
     },
     '& li': {
-      borderTop: '1px solid black'
-    }
+      borderTop: '1px solid black',
+    },
   },
   attribute: {
-    fontWeight: 800
-  }
+    fontWeight: 800,
+  },
 };
 
 class Nutrients extends React.Component {
@@ -70,16 +70,16 @@ class Nutrients extends React.Component {
 
 Nutrients.defaultProps = {
   headlineSize: 13,
-  calorieSummarySize: 14
+  calorieSummarySize: 14,
 };
 
 Nutrients.propTypes = {
   headlineSize: PropTypes.number,
   calorieSummarySize: PropTypes.number,
-  calories: PropTypes.number,
+  calories: PropTypes.any,
   caloriesFromFat: PropTypes.number,
   children: PropTypes.node,
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default injectSheet(styles)(Nutrients);

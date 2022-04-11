@@ -14,6 +14,8 @@ const Header = ({
   setCurrentPage,
   pageResults,
 }) => {
+  const paginationLength = pageResults.nbPages - 1;
+
   const handleKeyPress = async (event) => {
     if (event.key === 'Enter') {
       setSearchValue(event.target.value);
@@ -21,7 +23,6 @@ const Header = ({
     }
   };
 
-  console.log(searchValue);
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
     fetchData(page);
@@ -51,15 +52,6 @@ const Header = ({
             )}
           </div>
         </Box>
-        <div className="tags">
-          {searchValue ? (
-            <Stack direction="row" spacing={1}>
-              <Chip color="primary" label={searchValue} />
-            </Stack>
-          ) : (
-            ''
-          )}
-        </div>
       </div>
       <div className="bottom-row">
         <Stack spacing={2}>
@@ -68,7 +60,7 @@ const Header = ({
             boundaryCount={2}
             showFirstButton
             showLastButton
-            count={pageResults.nbPages - 1}
+            count={paginationLength}
             color="primary"
             onChange={handlePageChange}
             page={currentPage}
