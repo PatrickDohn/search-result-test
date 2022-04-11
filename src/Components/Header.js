@@ -21,13 +21,11 @@ const Header = ({
     }
   };
 
-  console.log(pageResults);
+  console.log(searchValue);
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
     fetchData(page);
   };
-
-  console.log(currentPage);
 
   return (
     <div className="container">
@@ -35,17 +33,22 @@ const Header = ({
         <input name="text" type="text" placeholder="Search" onKeyPress={handleKeyPress} />
         <Box sx={{ '& button': { m: 1 } }}>
           <div>
-            <Button
-              onClick={() => {
-                setSearchValue('');
-                fetchData(1);
-                setCurrentPage(1);
-              }}
-              variant="contained"
-              size="medium"
-            >
-              Clear Search
-            </Button>
+            {searchValue ? (
+              <Button
+                onClick={() => {
+                  setSearchValue('');
+                  fetchData(1);
+                  setCurrentPage(1);
+                }}
+                variant="contained"
+                size="medium"
+                color="error"
+              >
+                {searchValue}
+              </Button>
+            ) : (
+              ''
+            )}
           </div>
         </Box>
         <div className="tags">

@@ -3,7 +3,6 @@ import _ from 'lodash';
 import React, { useState, useEffect } from 'react';
 import Header from './Components/Header';
 import InfoCard from './Components/Card';
-// import { calculateScore } from './helpers';
 import url from './constants';
 
 function App() {

@@ -1,6 +1,7 @@
 <div id="top"></div>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e3ed860f-cf16-4131-8ab6-dc57f60f64c8/deploy-status)](https://app.netlify.com/sites/phenomenal-cucurucho-493fb4/deploys)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -106,7 +107,7 @@ TODO: fill in...
 - [x] Build out search component to to filter results based on search param
   - [ ] Add scoring system for more accurate search
 - [ ] Add tags of differnt categories for simple filtering
-- [ ] Add styling
+- [x] Add styling
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

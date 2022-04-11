@@ -22,7 +22,6 @@ export default function NutritionModal({ nutritionFacts }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  //   console.log(nutritionFacts);
   const nutrition = nutritionFacts;
 
   if (!_.get(nutrition, 'Calories.amount')) {
