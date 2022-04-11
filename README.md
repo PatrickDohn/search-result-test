@@ -104,11 +104,11 @@ This project is hosted on [Netlify](https://www.netlify.com/)
 
 To set up your own project head to Netlify and sign up for free.
 
-Follow there deployment docs and make sure and ENV variable you have you add to your netlify project.
+Follow there deployment docs and make sure any ENV variables you have you add to your netlify project.
 
-In Netlify do the following.
+To add variables to Netlify do the following.
 
-1. Go to your site
+1. Go to your site on Netlify
 2. In the the side bar click `Build & Deploy`
 3. click `Enviroment`
 4. Go to `Enviroment Variables` and add your variables as they appear in your ENV.
