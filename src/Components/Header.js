@@ -2,7 +2,6 @@ import React from 'react';
 import '../Styles/header.css';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import Chip from '@mui/material/Chip';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 

@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { NutritionLabel } from '../modified_modules/react-fda-nutrition-facts/src';
 import Typography from '@mui/material/Typography';
-import _ from 'lodash';
 import helpers from '../helpers';
 
 const { getNutritionField } = helpers;

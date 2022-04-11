@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 /**
  *
  * @param {Object} obj -  The data from the API call
